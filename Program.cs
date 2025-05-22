@@ -59,22 +59,3 @@ namespace MongoConsoleApp
     }
 
 }
-
-
-
-//public override Paging<Website> GetList<TFilter>(IFilter<TFilter> filter)
-//{
-//    WebsiteFilter websiteFilter = filter as WebsiteFilter;
-
-//    var builder = Builders<Website>.Filter;
-//    FilterDefinition<Website> queryFilter = builder.Empty;
-
-//    if (!string.IsNullOrEmpty(websiteFilter.name))
-//    {
-//        queryFilter = queryFilter & builder.Regex($"name", new BsonRegularExpression($".*{websiteFilter.name}.*", "i"));
-//    }
-
-//    SortDefinition<Website> sort = Builders<Website>.Sort.Ascending(x => x.Id);
-
-//    return new Paging<Website>(this.Collection, websiteFilter.page, queryFilter, sort, websiteFilter.per_page);
-//}
